@@ -1,0 +1,327 @@
+.shoppinglist {
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 60px;
+
+    .yourOrder {
+        width: 620px;
+        min-height: 507px;
+        color: $primary;
+        margin-right: 20px;
+
+        h3 {
+            font-size: $h3-text;
+            line-height: 1.5;
+            background: $gray;
+            padding: 14.5px 0;
+            text-align: center;
+            margin-bottom: 33px;
+        }
+    }
+}
+
+.orderlist {
+    .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        form {
+
+            input[type='button'],
+            input[type='text'] {
+                font-size: 1.4rem;
+                color: $primary;
+                font-weight: 300;
+            }
+        }
+
+        .itemprice {
+            span {
+                font-size: 1.6rem;
+                line-height: 1;
+            }
+        }
+    }
+
+    hr {
+        margin: 20px 0;
+        border: 0;
+        background-color: $gray;
+        height: 1px;
+    }
+
+    .itemImage {
+        width: 110px;
+        height: 110px;
+    }
+
+    p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+}
+
+.itemInfo {
+    margin-right: 40px;
+}
+
+.mobile {
+    display: none;
+}
+
+.normalCondition {
+    display: flex;
+}
+
+.qty {
+    width: 48px;
+    height: 48px;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid $gray;
+    border-top: 1px solid $gray;
+}
+
+.qtyminus,
+.qtyplus {
+    width: 48px;
+    height: 48px;
+    border: 1px solid $gray;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+.stats {
+    width: 300px;
+    height: 258px;
+    background: $primary;
+    color: $gray;
+    position: relative;
+
+    h3 {
+        font-size: $h3-text;
+        line-height: 1.5;
+        padding: 16px 0;
+        text-align: center;
+    }
+
+    hr {
+        margin: 0 20px;
+        width: 260px;
+        border: 0;
+        background-color: $gray;
+        height: 1px;
+    }
+
+    .allcost {
+        font-size: 1.6rem;
+        line-height: 1;
+        margin: 16px 0;
+
+        .itemSum {
+            margin-bottom: 8px;
+        }
+
+        .itemSum,
+        .shipping {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+    }
+
+    .summery {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        font-size: 1.8rem;
+        line-height: 1;
+        font-weight: bold;
+    }
+
+    button {
+        width: 100%;
+        height: 65px;
+        font-size: $h3-text;
+        color: $primary;
+        line-height: 1.5;
+        font-weight: bold;
+        background: $secondary;
+        border: none;
+        position: absolute;
+        bottom: 0;
+        cursor: pointer;
+    }
+}
+
+/*背景圖片設定開始*/
+.itemImage1 {
+    background: url('../img/photo-1504855328839-2f4baf9e0fd7.jpg') no-repeat 0 -15px;
+    background-size: 100%;
+}
+
+.itemImage2 {
+    background: url('../img/photo-1525203135335-74d272fc8d9c.jpg') no-repeat 0 -15px;
+    background-size: 100%;
+}
+
+.itemImage3 {
+    background: url('../img/photo-1464305795204-6f5bbfc7fb81.jpg') no-repeat -25px -10px;
+    background-size: auto 100%;
+}
+
+/*背景圖片設定結束*/
+
+/*小ICON 設定開始*/
+.delete_outline {
+    color: $darkgreen;
+}
+
+/*小ICON 設定結束*/
+
+/*RWD setting start*/
+@media (max-width: 992px) {
+    .shoppinglist {
+        width: 96%;
+
+        .yourOrder {
+            width: 65%;
+        }
+    }
+
+    .stats {
+        width: 33%;
+
+        hr {
+            width: 87%;
+        }
+    }
+
+}
+
+@media (max-width: 767px) {
+    .shoppinglist {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+
+        .yourOrder {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 31.5px;
+            margin-right: 0;
+
+            h3 {
+                width: 100%;
+                margin-bottom: 30px;
+            }
+
+            .orderlist {
+                width: 84%
+            }
+
+            .delete_outline {
+                display: none;
+            }
+        }
+    }
+
+    .stats {
+        width: 100%;
+        background: $white;
+        color: $primary;
+
+        .statsArea {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                background: $gray;
+                width: 84%;
+            }
+
+            .allcost,
+            .summery {
+                width: 84%;
+            }
+        }
+
+    }
+
+    .orderlist {
+        .itemImage {
+            width: 157px;
+            height: 106px;
+        }
+
+        hr {
+            margin: 8.5px 0;
+            border: 0;
+            background-color: $gray;
+            height: 1px;
+        }
+
+        .item {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .itemprice {
+                width: 100%;
+                text-align: right;
+
+                .mobile {
+                    display: block;
+                }
+            }
+        }
+
+        form {
+            width: 100%;
+
+            input {
+                width: 31%;
+            }
+        }
+    }
+
+    .itemSum,
+    .shipping,
+    .summery {
+        padding: 0;
+    }
+
+
+    .orderlist>hr,
+    .statsArea>hr {
+        display: none;
+    }
+
+
+    .mobileInfo {
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .itemImage1 {
+        background-position: 0 -50px;
+    }
+
+    .itemImage3 {
+        background: url('../img/photo-1464305795204-6f5bbfc7fb81.jpg') no-repeat;
+        background-size: 100%;
+    }
+}
+
+/*RWD setting end*/

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>pay successful</title>
+	<meta name="description" content="甜點店商網站練習">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Sweets甜點店商">
+	<meta property="og:description" content="一個甜點店商的網站練習">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.sweetsshop.com">
+	<meta property="og:image" content="img/fg-looking-image.png">
+	
+	<link rel="stylesheet" href="css/all.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+	<div class="header container">
+		<button class="drop-down-list">
+			<img src="img/dehaze-24px.png" alt="">
+		</button>
+		<h1 class="logo">
+			<a href="index.html">logo</a>
+		</h1>
+		<div class="navbar">
+			<ul class="nav">
+				<li><a href="index.html">首頁</a></li>
+				<li><a href="page.html">甜點</a></li>
+				<li><a href="userLogin.html">登入</a></li>
+			</ul>
+			<a href="shoppingCart.html" class="navbar-link"><span class="material-icons shoppingCart">shopping_cart</span></a>
+		</div>
+	</div>
+	<main>
+		<div class="payImage container">
+			<div class="paymentIcon">
+				<div class="check_circle_finish_div">
+					<span class="material-icons">check_circle</span>
+					<hr>
+					<span class="material-icons">check_circle</span>
+					<hr>
+					<span class="material-icons">check_circle</span>
+				</div>
+			</div>
+			<h4 class="success">附款成功</h4>
+			<div class="buttonDiv">
+				<a href="page.html" class="button">繼續逛逛</a>
+			</div>
+			<div class="displayNone buttonAppear">
+				<a href="page.html" class="button">繼續逛逛</a>
+			</div>
+		</div>
+	</main>
+	<div class="mailArea">
+		<div class="subscribe container">
+			<div class="subscribeLabel">
+				<div class="icon"></div>
+				<p>訂閱你我的甜蜜郵件</p>
+			</div>
+			<div class="subscribeInput">
+				<label for="mailto">
+					<span class="material-icons mail">mail</span>
+				</label>
+				<input type="text" id="mailto" name="mailto" class="inputArea">
+				<button>
+					<span class="material-icons arrowright">arrow_forward</span>
+				</button>	
+			</div>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="contactArea container">
+			<div class="footerInfo">
+				<div class="infoText">
+					<div class="footerLogo"></div>
+					<ul class="shopInfo">
+						<li>07-1234-5678</li>
+						<li>sweetaste@email.com</li>
+						<li>800 高雄市新興區幸福路 520 號</li>
+					</ul>
+				</div>
+					<div class="footerslogan"></div>
+			</div>
+			<div class="social">
+				<div class="socialIcon">
+					<div class="line"></div>
+					<div class="fb"></div>
+				</div>
+				<p>© 2018 Sweetaste* All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js.下載"></script>
+	<script>
+        $(document).ready(function(){
+            $('.drop-down-list').click(function () {
+                $('.nav').toggleClass('active')
+            })
+        });
+    </script>
+</body>
+</html>

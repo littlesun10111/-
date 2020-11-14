@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>invoice page</title>
+	<meta name="description" content="甜點店商網站練習">
+
+	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+	<meta property="og:title" content="Sweets甜點店商">
+	<meta property="og:description" content="一個甜點店商的網站練習">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="http://www.sweetsshop.com">
+	<meta property="og:image" content="img/fg-looking-image.png">
+	
+	<link rel="stylesheet" href="css/all.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+	<div class="header container">
+		<button class="drop-down-list">
+			<img src="img/dehaze-24px.png" alt="">
+		</button>
+		<h1 class="logo">
+			<a href="index.html">logo</a>
+		</h1>
+		<div class="navbar">
+			<ul class="nav">
+				<li><a href="index.html">首頁</a></li>
+				<li><a href="page.html">甜點</a></li>
+				<li><a href="userLogin.html">登入</a></li>
+			</ul>
+			<a href="shoppingCart.html" class="navbar-link"><span class="material-icons shoppingCart">shopping_cart</span></a>
+		</div>
+	</div>
+	<main>
+		<div class="payContent container">
+			<div class="paymentInfo">
+				<div class="paymentForm invoice">
+					<h3>發票</h3>
+					<div class="check_circle_div">
+						<span class="material-icons">check_circle</span>
+						<hr class="progress-line">
+						<span class="material-icons progress">check_circle</span>
+						<hr class="progress-line">
+						<span class="material-icons progress">radio_button_checked</span>
+					</div>
+					<form action="payfinish.html">
+						<a href="e-invoice.html"><input type="button" value="電子發票" class="nochoose nochooseText"></a>
+						<a href="invoice.html"><input type="button" value="郵寄發票" class="chosen"></a>
+						<div class="mailFormArea status_none">
+							<label for="mailInput">電子郵件信箱</label>
+							<input type="email" id="mailInput" placeholder="example@email.com" name="mailInput">
+						</div>
+						<div class="formAddress">
+							<label for="address" class="addressLabel">地址</label>
+							<div class="samelocation_div">
+								<input type="checkbox" id="sameAddress"name="sameAddress">
+								<label for="sameAddress">同運送地址</label>
+							</div>
+							<select name="address" id="01" class="county">
+								<option value="高雄市">高雄市</option>
+								<option value="台中市">台中市</option>
+								<option value="台北市">台北市</option>
+								<option value="新北市">新北市</option>
+								<option value="新竹縣">新竹縣</option>
+							</select>
+							<select name="address" id="02" class="township">
+								<option value="新興區">新興區</option>
+								<option value="小港區">小港區</option>
+								<option value="中正區">中正區</option>
+								<option value="苓雅區">苓雅區</option>
+							</select>
+							<select name="address" id="03" class="road">
+								<option value="幸福路 520 號">幸福路 520 號</option>
+								<option value="不幸路 000 號">不幸路 000 號</option>
+								<option value="測試路 123 號">測試路 123 號</option>
+							</select>
+						</div>
+						<div class="textID">
+							<label for="textIDnumber">統一編號（選填）</label>
+							<input type="text" id="textIDnumber" placeholder="12345678" name="textIDNumber">
+						</div>
+						<button type="submit" class="nextStep">確認結帳</button>
+					</form>
+				</div>
+			</div>
+			<div class="orderContent">
+				<div class="orderSum">
+					<h3>訂單摘要</h3>
+					<div class="allcost">
+						<div class="itemSum mb_8">
+							<p>小計</p>
+							<span>NT$ 2,700</span>
+						</div>
+						<div class="shipping">
+							<p>運費</p>
+							<span>NT$ 300</span>
+						</div>
+					</div>
+					<div class="summery">
+						<p>總計</p>
+						<span>NT$ 3,000</span>
+					</div>
+				</div>
+				<div class="orderlist-static">
+					<h3>購物清單</h3>
+					<div class="itemlist">
+						<div class="item">
+							<div class="itemImage itemImage1"></div>
+							<div class="itemInfo">
+								<p>焦糖馬卡龍(2)</p>
+								<p>NT$ 900</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="itemImage itemImage2"></div>
+							<div class="itemInfo">
+								<p>焦糖馬卡龍(2)</p>
+								<p>NT$ 900</p>
+							</div>
+						</div>
+						<div class="item">
+							<div class="itemImage itemImage3"></div>
+							<div class="itemInfo">
+								<p>焦糖馬卡龍(2)</p>
+								<p>NT$ 900</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<div class="mailArea">
+		<div class="subscribe container">
+			<div class="subscribeLabel">
+				<div class="icon"></div>
+				<p>訂閱你我的甜蜜郵件</p>
+			</div>
+			<div class="subscribeInput">
+				<label for="mailto">
+					<span class="material-icons mail">mail</span>
+				</label>
+				<input type="text" id="mailto" name="mailto" class="inputArea">
+				<button>
+					<span class="material-icons arrowright">arrow_forward</span>
+				</button>	
+			</div>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="contactArea container">
+			<div class="footerInfo">
+				<div class="infoText">
+					<div class="footerLogo"></div>
+					<ul class="shopInfo">
+						<li>07-1234-5678</li>
+						<li>sweetaste@email.com</li>
+						<li>800 高雄市新興區幸福路 520 號</li>
+					</ul>
+				</div>
+					<div class="footerslogan"></div>
+			</div>
+			<div class="social">
+				<div class="socialIcon">
+					<div class="line"></div>
+					<div class="fb"></div>
+				</div>
+				<p>© 2018 Sweetaste* All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js.下載"></script>
+	<script>
+        $(document).ready(function(){
+            $('.drop-down-list').click(function () {
+                $('.nav').toggleClass('active')
+            })
+        });
+    </script>
+</body>
+</html>

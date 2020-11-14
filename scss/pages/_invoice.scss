@@ -1,0 +1,64 @@
+.invoice {
+    min-height: 555px;
+}
+
+.paymentForm {
+
+    form {
+        a {
+            &:nth-child(1)>.nochooseText {
+                color: $gray;
+            }
+
+            &:nth-child(2)>.chosen {
+                color: $primary;
+            }
+        }
+
+        select {
+            border: none;
+            box-sizing: border-box;
+            height: 56px;
+            padding-left: 20px;
+            font-size: 1.6rem;
+            color: $darkgreen;
+        }
+
+        .formAddress {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 16px;
+
+            .samelocation_div {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+
+            .county,
+            .township {
+                width: 49%;
+                margin-bottom: 8px;
+            }
+
+            .road {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.samelocation_div {
+    label {
+        font-size: 1.6rem;
+    }
+
+    input[type="checkbox"] {
+        width: 16px;
+        height: 16px;
+        margin: 3px 8px 10px;
+    }
+}

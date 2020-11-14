@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/all.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+	<div class="header container">
+		<button class="drop-down-list">
+			<img src="img/dehaze-24px.png" alt="">
+		</button>
+		<h1 class="logo">
+			<a href="#">logo</a>
+		</h1>
+		<div class="navbar">
+			<ul class="nav">
+				<li><a href="#">首頁</a></li>
+				<li><a href="#">甜點</a></li>
+				<li><a href="#">登入</a></li>
+			</ul>
+			<a href="#" class="navbar-link"><span class="material-icons shoppingCart">shopping_cart</span></a>
+		</div>
+	</div>
+	<div class="mailArea">
+		<div class="subscribe container">
+			<div class="subscribeLabel">
+				<div class="icon"></div>
+				<p>訂閱你我的甜蜜郵件</p>
+			</div>
+			<div class="subscribeInput">
+				<label for="mailto">
+					<span class="material-icons mail">mail</span>
+				</label>
+				<input type="text" id="mailto" name="mailto" class="inputArea">
+				<button>
+					<span class="material-icons arrowright">arrow_forward</span>
+				</button>	
+			</div>
+		</div>
+	</div>
+	<div class="contact">
+		<div class="contactArea container">
+			<div class="footerInfo">
+				<div class="infoText">
+					<div class="footerLogo"></div>
+					<ul class="shopInfo">
+						<li>07-1234-5678</li>
+						<li>sweetaste@email.com</li>
+						<li>800 高雄市新興區幸福路 520 號</li>
+					</ul>
+				</div>
+				<div class="footerslogan"></div>
+			</div>
+			<div class="social">
+				<div class="socialIcon">
+					<div class="line"></div>
+					<div class="fb"></div>
+				</div>
+				<p>© 2018 Sweetaste* All Rights Reserved</p>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js.下載"></script>
+	<script>
+        $(document).ready(function(){
+            $('.drop-down-list').click(function () {
+                $('.nav').toggleClass('active')
+            })
+        });
+    </script>
+</body>
+</html>

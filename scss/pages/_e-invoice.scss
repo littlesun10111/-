@@ -1,0 +1,53 @@
+.e-invoice {
+    min-height: 491px;
+}
+
+.paymentForm {
+    form {
+        a {
+            display: block;
+            width: 50%;
+
+            input {
+                width: 100%;
+                height: 56px;
+                border: 1px solid $gray;
+                font-size: 2rem;
+                margin-bottom: 30px;
+                font-weight: bold;
+                color: $primary;
+                padding: 0;
+            }
+
+            &:nth-child(2)>input {
+                color: $gray;
+            }
+
+            &:nth-child(1)>.chosen {
+                color: $primary;
+            }
+        }
+
+        .mailFormArea,
+        .textID {
+            width: 100%;
+            margin-bottom: 16px;
+        }
+
+
+    }
+}
+
+.paymentInfo {
+    .paymentForm {
+        form {
+            .status_none {
+                display: none;
+            }
+        }
+    }
+}
+
+.nochoose {
+    background: transparent;
+}

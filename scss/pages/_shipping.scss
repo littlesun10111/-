@@ -1,0 +1,305 @@
+.shipContent {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 65px;
+
+    .shippingInfo {
+        width: 460px;
+        margin-right: 20px;
+    }
+}
+
+.shippingForm {
+    width: 100%;
+    min-height: 567px;
+    box-sizing: border-box;
+    background: $primary;
+    color: $gray;
+    padding: 30px 40px 0;
+    position: relative;
+
+    h3 {
+        font-weight: bold;
+        font-size: 3.6rem;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 2rem;
+        line-height: 1;
+        justify-content: space-between;
+
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .formFname,
+        .formLname {
+            width: 186px;
+        }
+
+        .formTel {
+            width: 100%;
+        }
+
+        .formAddress {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .county,
+            .township {
+                width: 186px;
+                margin-bottom: 8px;
+            }
+
+            .addressLabel {
+                width: 100%;
+            }
+
+            .road {
+                width: 100%;
+            }
+        }
+
+        .formFname,
+        .formLname,
+        .formTel {
+            margin-bottom: 16px;
+        }
+
+        input {
+            width: 100%;
+            box-sizing: border-box;
+            height: 56px;
+            padding-left: 20px;
+            border: none;
+            border-radius: 0;
+            font-size: 1.6rem;
+            color: $darkgreen;
+        }
+
+        select {
+            border: none;
+            box-sizing: border-box;
+            height: 56px;
+            padding-left: 20px;
+            font-size: 1.6rem;
+            color: $darkgreen;
+        }
+
+        .nextStep {
+            width: 100%;
+            height: 65px;
+            border: none;
+            background: $secondary;
+            color: $primary;
+            font-size: 2.4rem;
+            box-sizing: border-box;
+            cursor: pointer;
+            font-weight: bold;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+}
+
+/*small icon*/
+.check_circle_div {
+    width: 185px;
+    position: absolute;
+    right: 40px;
+    top: 49px;
+    display: flex;
+    align-items: center;
+    color: $darkgreen;
+
+    span {
+        font-size: 2rem;
+
+        &:first-child {
+            color: $gray;
+        }
+    }
+
+    hr {
+        width: 80px;
+        height: 1px;
+        margin: 0;
+        border: 0;
+        background-color: $darkgreen;
+    }
+}
+
+/*small icon end*/
+
+.orderContent {
+    width: 300px;
+    min-height: 582px;
+    color: $darkgreen;
+
+    .orderSum {
+        width: 100%;
+        min-height: 193px;
+        border: 1px solid $gray;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+
+        .allcost {
+            padding: 0 20px;
+            margin: 16px 0;
+            font-size: 1.6rem;
+            line-height: 1;
+            font-weight: normal;
+
+            .itemSum,
+            .shipping {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .itemSum {
+                margin-bottom: 8px;
+            }
+        }
+
+        .summery {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-size: 2rem;
+            line-height: 1.5;
+        }
+    }
+
+    h3 {
+        width: 100%;
+        background: $gray;
+        font-weight: bold;
+        font-size: 2.4rem;
+        text-align: center;
+        padding: 18.5px 0;
+        margin-bottom: 16px;
+    }
+}
+
+.orderlist-static {
+    width: 100%;
+    min-height: 369px;
+    border: 1px solid $gray;
+    box-sizing: border-box;
+
+    .itemlist {
+        padding: 0 20px;
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 16px;
+        font-size: 1.6rem;
+        line-height: 1;
+        font-weight: normal;
+
+        .itemImage {
+            width: 120px;
+            height: 80px;
+            margin-right: 20px;
+        }
+
+        .itemInfo {
+            margin-right: 0;
+
+            p:last-child {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+
+/*背景圖片設定開始*/
+.itemImage1 {
+    background: url('../img/photo-1504855328839-2f4baf9e0fd7.jpg') no-repeat 0 -40px;
+    background-size: cover;
+}
+
+.itemImage2 {
+    background: url('../img/photo-1525203135335-74d272fc8d9c.jpg') no-repeat 0 -15px;
+    background-size: cover;
+}
+
+.itemImage3 {
+    background: url('../img/photo-1464305795204-6f5bbfc7fb81.jpg') no-repeat;
+    background-size: cover;
+}
+
+/*背景圖片設定結束*/
+
+/*RWD*/
+@media screen and (max-width: 992px) {
+    .shipContent {
+        margin-bottom: 40px;
+        width: 90%;
+    }
+
+    .shippingForm {
+        form {
+
+            .formFname,
+            .formLname {
+                width: 49%;
+            }
+
+            .formAddress {
+
+                .county,
+                .township {
+                    width: 49%;
+                }
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .orderlist {
+        .item {
+            .itemImage {
+                width: 110px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .shipContent {
+        margin-bottom: 0;
+        margin-top: 0;
+        align-items: center;
+        width: 100%;
+
+        .shippingInfo {
+            width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    .orderContent {
+        display: none;
+    }
+
+
+}

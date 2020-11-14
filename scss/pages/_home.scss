@@ -1,0 +1,450 @@
+.banner {
+    width: 100%;
+    position: relative;
+
+    .bannerImages {
+        width: 100%;
+        height: 496px;
+        background: url('../img/photo-1473256599800-b48c7c88cd7e.jpg') no-repeat 0 -120px;
+        background-size: cover;
+    }
+
+    .productArea {
+        width: 84%;
+        display: flex;
+        position: absolute;
+        left: 80px;
+        top: 420px;
+        display: flex;
+        justify-content: center;
+
+    }
+}
+
+.productSelect {
+    width: 33.3%;
+    height: 256px;
+
+    :hover {
+        background: $secondary;
+        opacity: 0.8;
+        color: $primary;
+        font-weight: bolder;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 2.4rem;
+        writing-mode: vertical-lr;
+        width: 100%;
+        padding: 70px 0;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 5px;
+
+    }
+}
+
+.productBg2 {
+    background: $primary;
+    opacity: 0.8;
+    color: $white;
+
+}
+
+.productBorder_w {
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+
+.intro {
+    margin-top: 247px;
+
+    .introProduct {
+        width: 100%;
+        margin-bottom: 60px;
+
+        h3 {
+            width: 460px;
+            height: 460px;
+        }
+
+        h4 {
+            width: 89px;
+            height: 310px;
+        }
+
+        .introText {
+            height: 280px;
+            overflow: hidden;
+            writing-mode: vertical-rl;
+            font-size: 1.6rem;
+            font-weight: normal;
+            line-height: 1.5;
+            color: $darkgreen;
+            align-self: center;
+        }
+    }
+}
+
+.innerElement {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.productLink {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+
+    .productEach {
+        width: 32%;
+        text-decoration: none;
+
+        .product_img {
+            width: 100%;
+            height: 315px;
+            position: relative;
+
+            .textTag {
+                padding: 10px;
+                writing-mode: vertical-rl;
+                color: $gray;
+                background: $primary;
+                font-size: 1.6rem;
+                font-weight: bold;
+                position: absolute;
+                left: 20px;
+            }
+        }
+
+        .productbutton {
+            width: 100%;
+            display: flex;
+            color: $primary;
+            text-align: center;
+            font-size: 2rem;
+            line-height: 1.5;
+
+            p {
+                padding: 12px 0;
+                border: 1px solid $gray;
+                box-sizing: border-box;
+            }
+
+            .name {
+                width: 58%;
+            }
+
+            .price {
+                width: 42%;
+                font-weight: 400;
+            }
+        }
+
+        .buybutton {
+            p {
+                width: 100%;
+                padding: 12px 0;
+                background: $gray;
+                color: $primary;
+                font-size: 2.4rem;
+                text-align: center;
+                line-height: 1.5;
+            }
+
+            :hover {
+                background: $primary;
+                color: $gray;
+            }
+        }
+    }
+}
+
+//客製化
+.heart {
+    color: var(--primary);
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+
+//背景圖片
+.img_1 {
+    background: url('../img/photo-1514517220017-8ce97a34a7b6.jpg') no-repeat 0 -70px;
+    background-size: 300px auto;
+}
+
+.img_2 {
+    background: url('../img/photo-1525203135335-74d272fc8d9c.jpg') no-repeat 0 -50px;
+    background-size: 300px auto;
+}
+
+.img_3 {
+    background: url('../img/photo-1504473089979-b1c4993a9653.jpg') no-repeat 0 -70px;
+    background-size: 300px auto;
+}
+
+.productImage1 {
+    background: url('../img/photo-1490914327627-9fe8d52f4d90.jpg') no-repeat 0 -90px;
+    background-size: cover;
+    /*filter: blur(5px);*/
+}
+
+.productImage2 {
+    background: url('../img/photo-1504114133367-631ecd3db3ca.jpg') no-repeat 0 -60px;
+    background-size: cover;
+    /*filter: blur(5px);*/
+}
+
+.productImage3 {
+    background: url('../img/photo-1499638472904-ea5c6178a300.jpg') no-repeat 0 -50px;
+    background-size: cover;
+    /*filter: blur(5px);*/
+}
+
+.picSweet1 {
+    background: url('../img/lg-為什麼選擇了做甜點.svg') no-repeat;
+    background-size: 100%;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.picSweet2 {
+    background: url('../img/lg-為什麼一定要吃甜點.svg') no-repeat;
+    background-size: 100%;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.picSweet3 {
+    background: url('../img/photo-1519730722595-a5ff788dea4d.jpg') no-repeat 0 -100px;
+    background-size: 100%;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.picSweet4 {
+    background: url('../img/photo-1501432781167-c0ccfd492297.jpg') no-repeat 0 -100px;
+    background-size: 100%;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.intro_bg {
+    background: url('../img/main-bg.jpg');
+}
+
+.intro_slogan {
+    width: 90px;
+    height: 328px;
+    background: url('../img/lg-想吃甜點是不需要理由的.svg') no-repeat;
+}
+
+//RWD
+
+@media (max-width: 992px) {
+
+    .banner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .productArea {
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            align-self: center;
+            left: 0;
+            top: 0;
+        }
+
+        .bannerImages {
+            background-position: 0 -100px;
+        }
+    }
+
+    .intro {
+        margin-top: 60px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    /*排版設定*/
+    .displayNone-md {
+        display: none;
+    }
+
+    .mb_md_30 {
+        margin-bottom: 30px;
+    }
+
+    .m_md_t12_b40 {
+        margin: 12px 0 40px;
+    }
+
+    .pd_md_3 {
+        padding: 30px 0;
+    }
+
+    .my_md_12 {
+        margin: 12px 0;
+    }
+
+    /*內容設定開始*/
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .banner {
+        .bannerImages {
+            height: 350px;
+            background-size: cover;
+            background-position: 0 0;
+        }
+    }
+
+
+    .productArea {
+        width: 100%;
+        height: 180px;
+        position: relative;
+        left: 0;
+        top: 0;
+
+        .productSelect {
+            width: 33.3%;
+            height: 180px;
+        }
+    }
+
+
+
+    .intro {
+        width: 100%;
+        margin-top: 0;
+
+        .introProduct {
+            margin-bottom: 0;
+
+            .innerElement {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .introText {
+                    writing-mode: horizontal-tb;
+                    height: auto;
+                    order: 1;
+                }
+
+                h3 {
+                    width: 100%;
+                    height: 250px;
+                    margin: 30px 0;
+                }
+
+                h4 {
+                    width: 375px;
+                    height: 60px;
+                    margin-top: 30px;
+                    order: -1;
+                }
+            }
+        }
+    }
+
+
+
+    .productLink {
+        box-sizing: border-box;
+        margin-bottom: 0;
+        padding: 0 30px 30px;
+        justify-content: space-evenly;
+
+        .productEach {
+            width: 45%;
+        }
+    }
+
+
+    /*背景圖片設定開始*/
+    .intro_bg {
+        background: url('../img/bg_768.jpg');
+    }
+
+    .productImage1 {
+        background-position: 0 -40px;
+        background-size: 120%;
+    }
+
+    .productImage2,
+    .productImage3 {
+        background-position: 0 0;
+        background-size: 120%;
+    }
+
+    .intro_slogan {
+        width: 226px;
+        height: 60px;
+        background: url('../img/sm-橫式-想吃甜點是不需要理由的.svg') no-repeat;
+    }
+
+    .picSweet1 {
+        background: url('../img/sm-橫式-為什麼選擇了做甜點.svg') no-repeat 50%;
+    }
+
+    .picSweet2 {
+        background: url('../img/sm-橫式-為什麼一定要吃甜點.svg') no-repeat 50%;
+    }
+
+    .picSweet3 {
+        background-position-y: -150px;
+    }
+
+    .picSweet4 {
+        background-position-y: -150px;
+    }
+
+    .img_1 {
+        background-position-y: -100px;
+        background-size: cover;
+    }
+
+    /*背景圖片設定結束*/
+    /*內容設定結束*/
+
+}
+
+@media (max-width: 767px) {
+    .displayNone-sm {
+        display: none;
+    }
+
+    .banner {
+        .bannerImages {
+            height: 277px;
+        }
+    }
+
+    .productLink {
+        justify-content: center;
+
+        .productEach {
+            width: 100%;
+        }
+    }
+}

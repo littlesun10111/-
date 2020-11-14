@@ -1,0 +1,105 @@
+.contact {
+    height: 341px;
+    background: $gray;
+    box-sizing: border-box;
+    padding: 30px 0 0;
+}
+
+.footerInfo {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    .infoText {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .footerLogo {
+            width: 172px;
+            height: 27px;
+            background: url('../img/logotype-lg-dark.svg') no-repeat;
+            margin-bottom: 40px;
+        }
+
+        .shopInfo {
+            font-size: 1.6rem;
+            font-weight: normal;
+            color: $primary;
+        }
+    }
+
+    .footerslogan {
+        width: 60px;
+        height: 219px;
+        background: url('../img/sm-今天是個吃甜點的好日子.svg') no-repeat;
+    }
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .socialIcon {
+        display: flex;
+
+        .line {
+            width: 32px;
+            height: 32px;
+            background: url('../img/ic-line@.svg') no-repeat;
+            margin-right: 8px;
+        }
+
+        .fb {
+            width: 32px;
+            height: 32px;
+            background: url('../img/ic-facebook.svg') no-repeat;
+        }
+    }
+
+    p {
+        color: $primary;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .contactArea {
+        padding: 0 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerslogan {
+        display: none;
+    }
+
+    .contact {
+        height: 311px;
+        padding: 0;
+        width: 100%;
+    }
+
+    .contactArea {
+        box-sizing: border-box;
+        height: 311px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+    }
+
+    .footerInfo {
+        margin-bottom: 0;
+    }
+
+    .social {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .socialIcon {
+        margin-bottom: 20px;
+    }
+}
